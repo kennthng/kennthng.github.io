@@ -7,4 +7,4 @@ redirect_from:
   - /about.html
 ---
 
-I am an assitant professor in mathematics and actuarial science at the Ohio State University. I received my PhD degree at the University of Illinois under the supervision of Dr. Alfred Chong (Heriot-Watt) and Prof. Phillip Yam (CUHK). My research interests encompass stochastic control, specifically in forward utilities and mean field games, with their financial and actuarial applications. I am also an associate of the Society of Actuaries (ASA). 
+I am an assistant professor in mathematics and actuarial science at the Ohio State University. I received my PhD degree at the University of Illinois under the supervision of <a href="https://sites.google.com/view/wingfungalfredchong/">Dr. Alfred Chong</a> (Heriot-Watt) and <a href="https://www.sta.cuhk.edu.hk/scpy/">Prof. Phillip Yam</a> (CUHK). My research interests encompass stochastic control, specifically in forward utilities and mean field games, with their financial and actuarial applications. I am also an associate of the Society of Actuaries (ASA). 
