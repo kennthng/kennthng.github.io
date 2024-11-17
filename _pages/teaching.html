@@ -10,6 +10,8 @@ author_profile: true
 <!-- Define the teaching categories with full names -->
 {% assign category_names = "The Ohio State University,The University of Illinois Urbana-Champaign (TA),The Hong Kong University of Science and Technology (IA),The University of Hong Kong (TA)" | split: ',' %}
 {% assign categories = "OSU,UIUC,HKUST,HKU" | split: ',' %}
+
+<!-- Loop through each category and display the courses -->
 {% for i in (0..categories.size-1) %}
   <h2>{{ category_names[i] }}</h2>
   <hr />
@@ -19,14 +21,13 @@ author_profile: true
 
   <!-- Loop through the posts and group them by course title -->
   {% for post in site.teaching reversed %}
-    {% if post.category == categories[i] %}
+    {% if post.category == categories[i] %} <!-- Match category name -->
       
       <!-- If the course is already in the hash, append the semester -->
       {% if courses[post.title] %}
         {% assign courses[post.title] = courses[post.title] | append: ", " | append: post.semester %}
-      
-      <!-- If the course is not in the hash, add it with the semester -->
       {% else %}
+        <!-- If the course is not in the hash, add it with the semester -->
         {% assign courses[post.title] = post.semester %}
       {% endif %}
     {% endif %}
