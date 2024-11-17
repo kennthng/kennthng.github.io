@@ -8,8 +8,8 @@ author_profile: true
 {% include base_path %}
 
 <!-- Define the teaching categories with full names -->
-{% assign category_names = "The Ohio State University,The University of Hong Kong,The Hong Kong University of Science and Technology" | split: ',' %}
-{% assign categories = "OSU,HKU,HKUST" | split: ',' %}
+{% assign category_names = "The Ohio State University,The University of Illinois Urbana-Champaign (TA),The Hong Kong University of Science and Technology (IA),The University of Hong Kong" | split: ',' %}
+{% assign categories = "OSU,UIUC,HKUST,HKU" | split: ',' %}
 {% for i in (0..categories.size-1) %}
   <h2>{{ category_names[i] }}</h2>
   <hr />
