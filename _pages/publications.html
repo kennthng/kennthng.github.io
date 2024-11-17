@@ -22,11 +22,12 @@ author_profile: true
     {% endunless %}
     <div>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      {% if post.authors %}
-        <p><strong>Authors:</strong> {{ post.authors }}</p>
-      {% endif %}
-      {% if post.journal %}
-        <p><strong>Journal:</strong> {{ post.journal }}</p>
+      {% if post.authors and post.journal %}
+        <p>{{ post.authors }}. <em>{{ post.journal }}</em> (2024).</p>
+      {% elsif post.authors %}
+        <p>{{ post.authors }}.</p>
+      {% elsif post.journal %}
+        <p><em>{{ post.journal }}</em> (2024).</p>
       {% endif %}
       {% if post.paperurl %}
         <p><a href="{{ post.paperurl }}">Read the Paper</a></p>
