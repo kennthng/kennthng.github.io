@@ -7,40 +7,32 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Define the teaching categories with full names -->
-{% assign category_names = "The Ohio State University,The University of Illinois Urbana-Champaign (TA),The Hong Kong University of Science and Technology (IA),The University of Hong Kong (TA)" | split: ',' %}
+<!-- Define categories -->
 {% assign categories = "OSU,UIUC,HKUST,HKU" | split: ',' %}
+{% assign category_names = "The Ohio State University,The University of Illinois Urbana-Champaign (TA),The Hong Kong University of Science and Technology (IA),The University of Hong Kong (TA)" | split: ',' %}
 
 <!-- Loop through each category and display the courses -->
 {% for i in (0..categories.size-1) %}
   <h2>{{ category_names[i] }}</h2>
   <hr />
   
-  <!-- Initialize an empty hash to track courses by title -->
-  {% assign courses = hash %}
+  <!-- Create an empty list to hold courses for this category -->
+  {% assign courses = "" %}
 
-  <!-- Loop through the posts and group them by course title -->
-  {% for post in site.teaching reversed %}
-    {% if post.category == categories[i] %} <!-- Match category name -->
-      
-      <!-- If the course is already in the hash, append the semester -->
-      {% if courses[post.title] %}
-        {% assign courses[post.title] = courses[post.title] | append: ", " | append: post.semester %}
-      {% else %}
-        <!-- If the course is not in the hash, add it with the semester -->
-        {% assign courses[post.title] = post.semester %}
-      {% endif %}
+  <!-- Loop through the teaching posts and match categories -->
+  {% for post in site.teaching %}
+    {% if post.category == categories[i] %}
+      <!-- Add the course to the list (semesters are comma-separated) -->
+      {% assign courses = courses | append: post.title | append: " (" | append: post.semester | append: ")" | append: "<br>" %}
     {% endif %}
   {% endfor %}
-
-  <!-- Now display the courses and their semesters -->
-  {% for course, semesters in courses %}
+  
+  <!-- Display the courses for the current category -->
+  {% if courses != "" %}
     <div>
-      <p>{{ course }} - <em>{{ semesters }}</em></p>
+      {{ courses }}
     </div>
-  {% endfor %}
-
-  {% unless site.teaching.size > 0 %}
+  {% else %}
     <p>No courses listed for this category yet.</p>
-  {% endunless %}
+  {% endif %}
 {% endfor %}
