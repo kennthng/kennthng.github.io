@@ -7,6 +7,22 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<!-- Define the teaching categories -->
+{% assign categories = "OSU,HKU,HKUST" | split: ',' %}
+{% for category in categories %}
+  <h2>{{ category }}</h2>
+  <hr />
+  
+  <!-- Loop through the posts and display each course with its year and semester -->
+  {% for post in site.teaching reversed %}
+    {% if post.category == category %}
+      <div>
+        <p><strong>{{ post.title }}</strong> - <em>{{ post.date | date: "%Y" }} {{ post.semester }}</em></p>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% unless site.teaching.size > 0 %}
+    <p>No courses listed for this category yet.</p>
+  {% endunless %}
 {% endfor %}
