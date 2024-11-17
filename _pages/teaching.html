@@ -7,9 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Define categories -->
+<!-- Define categories and their respective names -->
 {% assign categories = "OSU,UIUC,HKUST,HKU" | split: ',' %}
-{% assign category_names = "The Ohio State University,The University of Illinois Urbana-Champaign (TA),The Hong Kong University of Science and Technology (IA),The University of Hong Kong (TA)" | split: ',' %}
+{% assign category_names = "The Ohio State University,The University of Illinois Urbana-Champaign,The Hong Kong University of Science and Technology,The University of Hong Kong" | split: ',' %}
 
 <!-- Loop through each category and display the courses -->
 {% for i in (0..categories.size-1) %}
