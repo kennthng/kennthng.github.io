@@ -21,7 +21,7 @@ author_profile: true
       {% assign title_shown = true %}
     {% endunless %}
     <div>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3>{{ post.title }}</h3> <!-- Removed hyperlink from article title -->
       {% if post.authors and post.journal %}
         <p>{{ post.authors }}. <em>{{ post.journal }}</em> (2024).</p>
       {% elsif post.authors %}
