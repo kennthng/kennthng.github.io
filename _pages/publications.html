@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 <!-- Check for publication categories -->
-{% assign categories = "Publications,Working Papers" | split: ',' %}
+{% assign categories = "Peer-Reviewed Articles,Working Papers" | split: ',' %}
 {% for category in categories %}
   {% assign title_shown = false %}
   {% for post in site.publications reversed %}
