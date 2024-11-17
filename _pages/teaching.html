@@ -7,17 +7,18 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Define the teaching categories -->
+<!-- Define the teaching categories with full names -->
+{% assign category_names = "The Ohio State University, The University of Illinois Urbana-Champaign,The Hong Kong University of Science and Technology,The University of Hong Kong" | split: ',' %}
 {% assign categories = "OSU,UIUC,HKUST,HKU" | split: ',' %}
-{% for category in categories %}
-  <h2>{{ category }}</h2>
+{% for i in (0..categories.size-1) %}
+  <h2>{{ category_names[i] }}</h2>
   <hr />
   
   <!-- Loop through the posts and display each course with its year and semester -->
   {% for post in site.teaching reversed %}
-    {% if post.category == category %}
+    {% if post.category == categories[i] %}
       <div>
-        <p><strong>{{ post.title }}</strong> - <em>{{ post.date | date: "%Y" }} {{ post.semester }}</em></p>
+        <p>{{ post.title }} - <em>{{ post.date | date: "%Y" }} {{ post.semester }}</em></p>
       </div>
     {% endif %}
   {% endfor %}
