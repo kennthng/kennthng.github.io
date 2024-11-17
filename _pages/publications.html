@@ -29,9 +29,20 @@ author_profile: true
       {% elsif post.journal %}
         <p><em>{{ post.journal }}</em> (2024).</p>
       {% endif %}
-      {% if post.paperurl %}
-        <p><a href="{{ post.paperurl }}">Read the Paper</a></p>
-      {% endif %}
+      
+      <!-- Journal Link and arXiv Link on the same line -->
+      <p>
+        {% if post.journal_link %}
+          <a href="{{ post.journal_link }}">Journal Link</a>
+        {% endif %}
+        {% if post.journal_link and post.arxiv_link %}
+          &nbsp;|&nbsp; <!-- Adds a separator between links -->
+        {% endif %}
+        {% if post.arxiv_link %}
+          <a href="{{ post.arxiv_link }}">arXiv</a>
+        {% endif %}
+      </p>
+      
       <hr />
     </div>
   {% endfor %}
