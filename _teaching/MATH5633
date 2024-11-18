@@ -1,0 +1,20 @@
+---
+layout: post
+title: "MATH5633 Loss Model 1"
+date: 2024-11-16
+category: "The Ohio State University"
+semester: "2024 Fall"
+notes:
+  - title: "Chapter 1: Basic Probability"
+    file: "/assets/notes/Ch1 Basic Probability.pdf"
+  - title: "Chapter 2: Loss Severity Models"
+    file: "/assets/notes/Ch2 Loss Severity Models.pdf"
+  - title: "Chapter 3: Frequency Models"
+    file: "/assets/notes/Ch3 Frequency Models.pdf"
+ - title: "Chapter 4: Aggregate Risk Models"
+    file: "/assets/notes/Ch4 Aggregate Risk Models.pdf"
+ - title: "Chapter 5: Risk Measures"
+    file: "/assets/notes/Ch5 Risk Measures.pdf"
+ - title: "Chapter 6: Frequency Models"
+    file: "/assets/notes/Ch6 Credibility.pdf"
+---
