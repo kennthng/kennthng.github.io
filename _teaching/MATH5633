@@ -11,10 +11,10 @@ notes:
     file: "/assets/notes/Ch2 Loss Severity Models.pdf"
   - title: "Chapter 3: Frequency Models"
     file: "/assets/notes/Ch3 Frequency Models.pdf"
- - title: "Chapter 4: Aggregate Risk Models"
+  - title: "Chapter 4: Aggregate Risk Models"
     file: "/assets/notes/Ch4 Aggregate Risk Models.pdf"
- - title: "Chapter 5: Risk Measures"
+  - title: "Chapter 5: Risk Measures"
     file: "/assets/notes/Ch5 Risk Measures.pdf"
- - title: "Chapter 6: Frequency Models"
+  - title: "Chapter 6: Credibility"
     file: "/assets/notes/Ch6 Credibility.pdf"
 ---
