@@ -7,23 +7,39 @@ author_profile: true
 
 {% include base_path %}
 
-
+<h1>Teaching</h1>
+<p>Below are the courses I have taught at various institutions:</p>
 
 <!-- Loop through categories -->
-{% assign categories = "The Ohio State University,The University of Illinois Urbana-Champaign (TA),The Hong Kong University of Science and Technology (IA),The University of Hong Kong (TA)" | split: "," %}
+{% assign categories = "OSU,UIUC,HKUST,HKU" | split: "," %}
 
 {% for category in categories %}
   <h2>{{ category }}</h2>
   <hr />
 
   <!-- Display courses for the current category -->
-  {% assign courses = "" %}
+  {% assign has_courses = false %}
   {% for post in site.teaching %}
     {% if post.category == category %}
-      <p>{{ post.title }} ({{ post.semester }})</p>
+      {% assign has_courses = true %}
+      <p>
+        <strong>{{ post.title }}</strong> ({{ post.semester }})
+      </p>
+      <!-- Display notes if available -->
+      {% if post.notes %}
+        <ul>
+          {% for note in post.notes %}
+            <li><a href="{{ note.file }}" target="_blank">{{ note.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     {% endif %}
   {% endfor %}
 
+  <!-- If no courses for the category, display a message -->
+  {% unless has_courses %}
+    <p>No courses listed for this category yet.</p>
+  {% endunless %}
 
   <br />
 {% endfor %}
