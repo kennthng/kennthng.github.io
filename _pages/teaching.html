@@ -19,7 +19,7 @@ author_profile: true
     {% if post.category == category %}
       {% assign has_courses = true %}
       <p>
-        <strong>{{ post.title }}</strong> ({{ post.semester }})
+        {{ post.title }} ({{ post.semester }})
       </p>
       <!-- Display notes if available -->
       {% if post.notes %}
