@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>My Curriculum Vitae</h2>
+<h2>My Curriculum Vitae (Last Update 11/17/2024) </h2>
 <iframe src="{{ site.baseurl }}/assets/pdf/CV_KennethNg.pdf" width="100%" height="800px" frameborder="0">
   This browser does not support embedded PDFs. You can <a href="{{ site.baseurl }}/assets/pdf/CV_KennethNg.pdf">download the CV here</a>.
 </iframe>
