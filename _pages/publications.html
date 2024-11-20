@@ -24,10 +24,10 @@ author_highlight: "Ng, K.T.H"
     <div>
       <h3>{{ post.title }}</h3> <!-- Removed hyperlink from article title -->
       {% if post.authors and post.journal %}
-        {% assign authors_bold = "<strong>" | append: author_highlight | append: "</strong>"}
+        {% assign authors_bold = "<strong>" | append: author_highlight | append: "</strong>" %}
         <p>{{ post.authors | replace: author_highlight, authors_bold }}. <em>{{ post.journal }}</em> (2024).</p>
       {% elsif post.authors %}
-        {% assign authors_bold = "<strong>" | append: author_highlight | append: "</strong>"}
+        {% assign authors_bold = "<strong>" | append: author_highlight | append: "</strong>" %}
         <p>{{ post.authors | replace: author_highlight, authors_bold }}.</p>
       {% elsif post.journal %}
         <p><em>{{ post.journal }}</em> (2024).</p>
