@@ -21,14 +21,6 @@ author_profile: true
       <p>
         {{ post.title }} ({{ post.semester }})
       </p>
-      <!-- Display notes if available -->
-      {% if post.notes %}
-        <ul>
-          {% for note in post.notes %}
-            <li><a href="{{ note.file }}" target="_blank">{{ note.title }}</a></li>
-          {% endfor %}
-        </ul>
-      {% endif %}
     {% endif %}
   {% endfor %}
 
