@@ -55,14 +55,20 @@ layout: default
           {% endif %}
           <!-- Display notes if available -->
           {% if page.notes %}
-            <p>
-              <h2>Notes: </h2>
-              <ul>
-                  {% for note in page.notes %}
-                  <li><a href="{{ note.file }}" target="_blank">{{ note.title }}</a></li>
-                  {% endfor %}
-              </ul>
-            </p>
+            <h2>Notes: </h2>
+            <ul>
+                {% for note in page.notes %}
+                <li><a href="{{ note.file }}" target="_blank">{{ note.title }}</a></li>
+                {% endfor %}
+            </ul>
+          {% endif %}
+          {% if page.references %}
+            <h2>References: </h2>
+            <ul>
+                {% for reference in page.references %}
+                <li><a href="{{ reference.file }}" target="_blank">{{ reference.title }}</a></li>
+                {% endfor %}
+            </ul>
           {% endif %}
         {% else %}
           {{ content }}
