@@ -45,7 +45,28 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {{ content }}
+        {% if page.collection == 'teaching' %}
+          {% if page.syllabus %}
+            <p>
+              <h1>Syllabus: </h1>
+              <a href="{{ page.syllabus.file }}" target="_blank">{{ page.syllabus.title }}</a>
+              <br>
+            </p>
+          {% endif %}
+          <!-- Display notes if available -->
+          {% if page.notes %}
+            <p>
+              <h1>Notes: </h1>
+              <ul>
+                  {% for note in page.notes %}
+                  <li><a href="{{ note.file }}" target="_blank">{{ note.title }}</a></li>
+                  {% endfor %}
+              </ul>
+            </p>
+          {% endif %}
+        {% else %}
+          {{ content }}
+        {% endif %} 
 
         {% if page.citation and page.paperurl and page.slidesurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
