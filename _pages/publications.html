@@ -35,7 +35,7 @@ author_highlight: "Ng, K.T.H"
       <!-- Journal Link and arXiv Link on the same line -->
       <p>
         {% if post.journal_link %}
-          <a href="{{ post.journal_link }}">Journal</a>
+        <i class="ai ai-doi"></i> <a href="{{ post.journal_link }}">Journal</a>
         {% endif %}
         {% if post.journal_link and post.arxiv_link %}
           &nbsp;|&nbsp; <!-- Adds a separator between links -->
