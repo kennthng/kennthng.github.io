@@ -18,16 +18,14 @@ author_profile: true
   {% for post in site.teaching %}
     {% if post.category == category %}
       {% assign has_courses = true %}
-      <p>
-        {{ post.title }} ({{ post.semester }})
-      </p>
-      <!-- Display notes if available -->
       {% if post.notes %}
-        <ul>
-          {% for note in post.notes %}
-            <li><a href="{{ note.file }}" target="_blank">{{ note.title }}</a></li>
-          {% endfor %}
-        </ul>
+        <p>
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink"> {{ post.title }} ({{ post.semester }}) </a>
+        </p>
+      {% else %}
+        <p>
+          {{ post.title }} ({{ post.semester }})
+        </p>
       {% endif %}
     {% endif %}
   {% endfor %}

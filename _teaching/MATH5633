@@ -1,9 +1,10 @@
 ---
-layout: post
 title: "MATH5633 Loss Model 1"
+collection: teaching
 date: 2024-11-16
 category: "The Ohio State University (Lecturer)"
 semester: "2024 Fall"
+permalink: /teaching/MATH5633
 notes:
   - title: "Chapter 1: Basic Probability"
     file: "/assets/notes/Ch1 Basic Probability.pdf"
@@ -18,3 +19,12 @@ notes:
   - title: "Chapter 6: Introduction to Credibility"
     file: "/assets/notes/Ch6 Credibility.pdf"
 ---
+
+<!-- Display notes if available -->
+{% if page.notes %}
+<ul>
+    {% for note in page.notes %}
+    <li><a href="{{ note.file }}" target="_blank">{{ note.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
