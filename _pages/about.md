@@ -14,5 +14,5 @@ I was born in Hong Kong under British rule, and lived there my entire life until
 News
 ======
 <ul>
-  <li>[2024 Nov] Our article "<a href ="https://www.sciencedirect.com/science/article/abs/pii/S0165188924001957">Optimal Investment-Withdrawal Strategies for Variable Annuities under a Performance Fee Structure</a> is available on <i>Journal of Economic Dynamics and Control</i></li>
+  <li>[2024 Nov] Our article <a href ="https://www.sciencedirect.com/science/article/abs/pii/S0165188924001957">Optimal Investment-Withdrawal Strategies for Variable Annuities under a Performance Fee Structure</a> is available on <i>Journal of Economic Dynamics and Control</i></li>
 </ul>
