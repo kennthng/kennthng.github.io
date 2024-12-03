@@ -12,7 +12,7 @@ I am an assistant professor in mathematics and actuarial science at the Ohio Sta
 I was born in Hong Kong under British rule, and lived there my entire life until moving to the US. The photo on the left was taken in 2018 at the University of Hong Kong during my MPhil graduation, alongside my future wife.
 
 News
-******
+======
 <ul>
   <li>[2024 Nov] Our paper "Optimal Investment-Withdrawal Strategies for Variable Annuities under a Performance Fee Structure" is available on <i>Journal of Economic Dynamics and Control</i></li>
 </ul>
