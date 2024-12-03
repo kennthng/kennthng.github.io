@@ -15,4 +15,5 @@ News
 ======
 <ul>
   <li>[2024 Nov] Our article <a href ="https://www.sciencedirect.com/science/article/abs/pii/S0165188924001957">Optimal Investment-Withdrawal Strategies for Variable Annuities under a Performance Fee Structure</a> is available on <i>Journal of Economic Dynamics and Control</i></li>
+  <li>[2024 Sep] The Ohio State University will be the host of the 2026 Actuarial Research Conference (ARC)</li>
 </ul>
