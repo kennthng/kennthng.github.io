@@ -14,5 +14,5 @@ I was born in Hong Kong under British rule, and lived there my entire life until
 News
 ******
 <ul>
-  <li>[2024 Nov] Our paper "Optimal Investment-Withdrawal Strategies for Variable Annuities under a Performance Fee Structure" is available on Journal of Economic Dynamics and Control</li>
+  <li>[2024 Nov] Our paper "Optimal Investment-Withdrawal Strategies for Variable Annuities under a Performance Fee Structure" is available on <i>Journal of Economic Dynamics and Control</i></li>
 </ul>
