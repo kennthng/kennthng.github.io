@@ -14,7 +14,7 @@ I was born in Hong Kong under British rule, and lived there my entire life until
 News
 ======
 <ul>
-  <li>[2025 Jan] Our article <a href ="https://www.sciencedirect.com/science/article/abs/pii/S0165188924001957">Mean Field Analysis of Two-Party Governance: Competition versus Cooperation among Leaders</a> is available on <i>Automatica</i></li>
+  <li>[2025 Jan] Our article <a href ="https://doi.org/10.1016/j.automatica.2024.112028">Mean Field Analysis of Two-Party Governance: Competition versus Cooperation among Leaders</a> is available on <i>Automatica</i></li>
   <li>[2024 Nov] Our article <a href ="https://www.sciencedirect.com/science/article/abs/pii/S0165188924001957">Optimal Investment-Withdrawal Strategies for Variable Annuities under a Performance Fee Structure</a> is available on <i>Journal of Economic Dynamics and Control</i></li>
   <li>[2024 Sep] The Ohio State University will be the host of the 2026 Actuarial Research Conference (ARC)</li>
 </ul>
