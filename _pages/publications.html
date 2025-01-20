@@ -25,11 +25,11 @@ author_highlight: "Ng, K.T.H"
       <h3>{{ post.title }}</h3> <!-- Removed hyperlink from article title -->
       {% if post.authors %} {% assign authors_bold = "<strong>" | append: page.author_highlight | append: "</strong>" %} {% endif %}
       {% if post.authors and post.journal %}
-        <p>{{ post.authors | replace: page.author_highlight, authors_bold }}. <em>{{ post.journal }}</em> (2024).</p>
+        <p>{{ post.authors | replace: page.author_highlight, authors_bold }}. <em>{{ post.journal }}</em> ({{ post.date | slice: 0, 3 }}).</p>
       {% elsif post.authors %}
         <p>{{ post.authors | replace: page.author_highlight, authors_bold }}.</p>
       {% elsif post.journal %}
-        <p><em>{{ post.journal }}</em> (2024).</p>
+        <p><em>{{ post.journal }}</em> ({{ post.date | slice: 0, 3 }}).</p>
       {% endif %}
       
       <!-- Journal Link and arXiv Link on the same line -->
