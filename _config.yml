@@ -27,7 +27,7 @@ author:
   bio              : 
   location         : 
   employer         : "The Ohio State University"
-  uri              : "https://math.osu.edu/"
+  uri              : # "https://math.osu.edu/"
   email            : "ng.499@osu.edu" 
 
   # Academic websites
