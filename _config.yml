@@ -27,11 +27,11 @@ author:
   bio              : 
   location         : 
   employer         : "The Ohio State University"
-  uri              : # URL
+  uri              : "https://math.osu.edu/"
   email            : "ng.499@osu.edu" 
 
   # Academic websites
-  arxiv            : # URL - Update with the correct link to your profile
+  arxiv            : "https://arxiv.org/search/?searchtype=author&query=Ng%2C+K+T+H"
   googlescholar    : "https://scholar.google.ca/citations?user=UZzkSccAAAAJ&hl=en"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0008-5334-2983"
