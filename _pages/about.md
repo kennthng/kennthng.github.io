@@ -18,5 +18,4 @@ News
   <li>[2026 Jan] Our preprint article <a href ="https://arxiv.org/abs/2601.02276">Forward Performance Processes under Multiple Default Risks</a> is available on arXiv</li>
   <li>[2025 Nov] Our preprint article <a href ="https://arxiv.org/abs/2511.12292">Mean Field Analysis of Mutual Insurance Market</a> is available on arXiv</li>
   <li>[2025 March] Our project titled <i>Pricing and Staking of Decentralized Insurance</i> has been awarded a grant in the 2025 SOA Individual Grant Competition</li>
-  <li>[2025 Jan] Our article <a href ="https://doi.org/10.1016/j.automatica.2024.112028">Mean Field Analysis of Two-Party Governance: Competition versus Cooperation among Leaders</a> is available on <i>Automatica</i></li>
 </ul>
