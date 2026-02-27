@@ -10,44 +10,54 @@ author_highlight: "Ng, K.T.H"
 
 <!-- Check for publication categories -->
 {% assign categories = "Peer-Reviewed Articles,Preprints,Working Papers" | split: ',' %}
+{% assign count = ',' | split: ',' %}
+
+{% for category in categories %}
+  
+{% endfor %}
+
 {% for category in categories %}
   {% assign title_shown = false %}
-  {% for post in site.publications reversed %}
-    {% if post.category != category %}
-      {% continue %}
-    {% endif %}
-    {% unless title_shown %}
-      <h2>{{ category }}</h2>
-      <hr />
-      {% assign title_shown = true %}
-    {% endunless %}
-    <div>
-      <h3>{{ post.title }}</h3> <!-- Removed hyperlink from article title -->
-      {% if post.authors %} {% assign authors_bold = "<strong>" | append: page.author_highlight | append: "</strong>" %} {% endif %}
-      {% if post.authors and post.journal %}
-        <p>{{ post.authors | replace: page.author_highlight, authors_bold }}. <em>{{ post.journal }}</em> ({{ post.date | slice: 0, 4 }}).</p>
-      {% elsif post.authors %}
-        <p>{{ post.authors | replace: page.author_highlight, authors_bold }}.</p>
-      {% elsif post.journal %}
-        <p><em>{{ post.journal }}</em> ({{ post.date | slice: 0, 4 }}).</p>
+  {% unless title_shown %}
+    <h2>{{ category }}</h2>
+    <hr />
+    {% assign title_shown = true %}
+  {% endunless %}
+  <ol reveresd>
+    {% for post in site.publications reversed %}
+      {% if post.category != category %}
+        {% continue %}
       {% endif %}
-      
-      <!-- Journal Link and arXiv Link on the same line -->
-      <p>
-        {% if post.journal_link %}
-        <i class="ai ai-doi"></i> <a href="{{ post.journal_link }}">Journal</a>
-        {% endif %}
-        {% if post.journal_link and post.arxiv_link %}
-          &nbsp;|&nbsp; <!-- Adds a separator between links -->
-        {% endif %}
-        {% if post.arxiv_link %}
-          <i class="ai ai-arxiv"></i> <a href="{{ post.arxiv_link }}">arXiv</a>
-        {% endif %}
-      </p>
-      
-      <hr />
-    </div>
-  {% endfor %}
+      <li>
+        <div>
+          <h3>{{ post.title }}</h3> <!-- Removed hyperlink from article title -->
+          {% if post.authors %} {% assign authors_bold = "<strong>" | append: page.author_highlight | append: "</strong>" %} {% endif %}
+          {% if post.authors and post.journal %}
+            <p>{{ post.authors | replace: page.author_highlight, authors_bold }}. <em>{{ post.journal }}</em> ({{ post.date | slice: 0, 4 }}).</p>
+          {% elsif post.authors %}
+            <p>{{ post.authors | replace: page.author_highlight, authors_bold }}.</p>
+          {% elsif post.journal %}
+            <p><em>{{ post.journal }}</em> ({{ post.date | slice: 0, 4 }}).</p>
+          {% endif %}
+          
+          <!-- Journal Link and arXiv Link on the same line -->
+          <p>
+            {% if post.journal_link %}
+            <i class="ai ai-doi"></i> <a href="{{ post.journal_link }}">Journal</a>
+            {% endif %}
+            {% if post.journal_link and post.arxiv_link %}
+              &nbsp;|&nbsp; <!-- Adds a separator between links -->
+            {% endif %}
+            {% if post.arxiv_link %}
+              <i class="ai ai-arxiv"></i> <a href="{{ post.arxiv_link }}">arXiv</a>
+            {% endif %}
+          </p>
+          
+          <hr />
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
   <!-- {% unless title_shown %}
     <p>No entries in this category yet.</p>
   {% endunless %} -->
