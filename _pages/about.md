@@ -14,6 +14,7 @@ I was born in Hong Kong under British rule, and grew up there before moving to t
 News
 ======
 <ul>
+    <li>[2026 March] Our preprint article <a href ="https://arxiv.org/abs/2603.26491">Capital-Allocation-Induced Risk Sharing </a> is available on arXiv</li>
     <li>[2026 Feb] Our preprint article <a href ="https://arxiv.org/abs/2602.14223">Pareto and Bowley Reinsurance Games in Peer-to-Peer Insurance</a> is available on arXiv</li>
   <li>[2026 Jan] Our preprint article <a href ="https://arxiv.org/abs/2601.02276">Forward Performance Processes under Multiple Default Risks</a> is available on arXiv</li>
   <li>[2025 Nov] Our preprint article <a href ="https://arxiv.org/abs/2511.12292">Mean Field Analysis of Mutual Insurance Market</a> is available on arXiv</li>
