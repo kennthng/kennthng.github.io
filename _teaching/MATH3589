@@ -1,0 +1,22 @@
+---
+title: "MATH3589 Introduction to Financial Mathematics"
+collection: teaching
+date: 2026-09-01
+category: "The Ohio State University (Lecturer)"
+semester: "2026 Fall"
+permalink: /teaching/MATH3589
+syllabus: 
+  title: MATH3589 Fall 2026 Course Outline 
+  file: "/assets/syllabus/MATH3589_2026Spring_Outline.pdf"
+notes:
+  - title: "TBD"
+    file: "/assets/notes/5636/Ch1 Fundamental Theorems of Asset Pricing.pdf"
+ 
+ 
+references:
+   - title: '<a href="https://link.springer.com/book/10.1007/978-0-387-22527-2" target="_blank"><i>Stochastic Calculus for Finance I: The Binomial Asset Pricing Model</i>, by Steven Shreve</a>'
+   - title: '<a href="https://www.pearson.com/en-us/subject-catalog/p/options-futures-and-other-derivatives/P200000005938/9780136939917?srsltid=AfmBOoq0cOji5HAvmQhOyhV5377Z4kdlRlJvYn4vjrdSYw7ikJJJvunP"><i>Options, Futures, and Other Derivatives</i>, by John C. Hull.'
+   - title: '<a href="https://www.karlin.mff.cuni.cz/~lachout/Vyuka/O-Sem/JacodProtter2004.pdf" target="_blank"><i>Probability Essentials</i>, by Jean Jacod and Philip Protter.'
+   - title: '<a href="https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf" target="_blank"><i>Probability: Theory and Examples</i>, by Rick Durrett.'
+---
+
